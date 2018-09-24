@@ -34,8 +34,8 @@
         l.hash
       );
       */
-      let split = l.split('/');
-      if (l.includes('result')) {
+      let split = l.href.split('/');
+      if (split.includes('result')) {
         if (split[split.length - 1] !== 'result') {
           l.replace('https://gpitot.github.io/soundtracks/?p=/result/' + split[split.length - 1]);
         }
